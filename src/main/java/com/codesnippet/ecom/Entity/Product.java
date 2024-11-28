@@ -23,10 +23,17 @@ public class Product {
     private Integer price;
     @Size(max=5, message = "Description cannot exceed 5 characters")
     private String description;
-
+    private Integer stock;
 
     public Product() {}
 
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
 
     public Integer getId() {
         return id;
